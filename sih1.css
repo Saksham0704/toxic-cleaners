@@ -1,0 +1,273 @@
+body,
+h1,
+h2,
+p {
+        height: 100%;
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+        font-family: "LATO" sans-serif;
+        line-height: 1.8em;
+        color: #666;
+    
+    }
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ce8f07;
+    font-weight: bold;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e07d1a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #f7b731;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#safe {
+    margin: 0 auto;
+    padding: 30px;
+line-height: 1.2em;
+}
+
+
+section {
+    
+    margin: 20px 0;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+}
+
+
+.services-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.service {
+    
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+     
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #c98416;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cont {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.2em;
+    color: #ce8f07;
+}
+#prin {
+    margin: 0 auto;
+    padding:10px;
+line-height: 1.2em;
+gap: 20px;
+} 
+.gg
+{
+    margin: 0 auto;
+    padding:10px;  
+}
+.jimg1 {
+    background-image: url(images1/download.jpg);
+    min-height: 100%;
+   
+}
+.jimg2{
+    background-image: url(images1/grass.avif);
+    min-height: 600px;
+   
+}
+.jimg3{
+    background-image: url(images1/sep.jpg);
+    min-height: 600px;
+   
+}
+.jimg1,
+.jimg2,
+.jimg3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.jtext{
+    position: absolute;
+    top:50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    letter-spacing: 8px;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.textbg{
+    background-color:#313534;
+    color:white;
+    padding:30px;
+}
+.section{
+    padding: 50px 80px;
+    text-align: center;
+
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+#add-box-btn {
+    margin: 20px;
+}
+
+.box-container {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+    display: none;
+    border: 5px solid #ddd;
+    padding: 20px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+   
+        transform: translateY(-5px);
+    
+    
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 35px;
+    border-color: #070809;
+    margin: 10px;
+    display:inline-flex;
+    border: 5px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.slider-container {
+    width: 70%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-slide {
+    width: 70%;
+    display: none;
+    align-items: center;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    align-items: center;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+#container {
+    padding: 10px;
+}
+#create-box {
+    padding: 10px;
+}

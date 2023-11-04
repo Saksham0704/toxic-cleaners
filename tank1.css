@@ -1,0 +1,88 @@
+body,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333333;
+    color: #c07111;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tank-status {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tank {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.indicator {
+    background-color: #ddd;
+    height: 100px;
+    position: relative;
+}
+
+.fill-level {
+    background-color: #4CAF50;
+    height: 100%;
+    width: 75%;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.amm {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    color: red;
+}
+
+
+.met {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    color: green;
+}
+
+#realTimePieChart {
+    width: 500px;
+    height: 100px;
+}

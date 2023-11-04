@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tank 1</title>
+    <link rel="stylesheet" href="tank1.css">
+    <link rel="stylesheet" href="tank1.js">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<body>
+
+    <header>
+        <h1>Tank Indicator</h1>
+    </header>
+    <main>
+        <section class="tank-status">
+            <h2>Tank Status</h2>
+            <div class="tank">
+                <h3>Current Tank Level:</h3>
+                <div class="indicator">
+                    <div class="fill-level" id="fill-level">75%</div>
+                </div>
+            </div>
+        </section>
+        <div class="amm">
+            <h2>ammonia in ppm</h2>
+        </div>
+        <div class="met">
+            <h2>methane in ppm</h2>
+        </div>
+     
+        <canvas id="realTimePieChart"></canvas>
+        <script>
+
+            const ctx = document.getElementById('realTimePieChart').getContext('2d');
+            const pieChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ['ammonia', 'methane'],
+                    datasets: [{
+                        data: [67, 215],
+                        
+                        backgroundColor: ['red', 'green']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true
+                }
+            });
+
+
+            function updatePieChart(newData) {
+                pieChart.data.datasets[0].data = newData;
+                pieChart.update();
+            }
+
+            setInterval(() => {
+                const newData = [Math.random() * 100,Math.random()*100];
+                updatePieChart(newData);
+            }, 3000); 
+        </script>
+      
+
+      
+    
+      
+       
+  
+       
+        
+    
+
+
+    </main>
+
+
+</body>

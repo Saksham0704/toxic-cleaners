@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    
+    <section>
+
+        <div class="main-div" id="login_div">
+            <h3>Septic Website Login</h3>
+            <p>Welcome to the page of toxic cleaners</p>
+            <input type="email" id="email_field" placeholder="Enter Your Email ..." />
+            <input type="password" id="password_field" placeholder="Enter Your Password ..." />
+            <a href="aisa.html"><button onclick="login()">Login</button></a>
+
+            <h3>Not a Account ?</h3>
+            <a href="signup.html">
+                <button id="signup">SignUp</button>
+            </a>
+        </div>
+
+        <div class="loggedin-div" id="user_div">
+            <h3>Welcome User !!</h3>
+
+            <img id="profilepic" />
+            <br>
+
+            Email Address:
+            <input type="text" id="user_email_from_database" disabled>
+            
+            UserName:
+            <input type="text" id="user_name_from_database" disabled>
+
+            <button onclick="logout()">Logout</button>
+            <br>
+            <a href="update_profile.html">
+                <button id="signup">Update Profile</button>
+            </a>
+        </div>
+        
+
+    </section>
+
+ 
+ <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+<!-- import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+    import { getAuth, createUserWithEmailAndPassword, 
+    signInWithEmailAndPassword, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"; -->
+<!-- </script> --> 
+<script src="init.js"></script>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

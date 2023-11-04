@@ -1,0 +1,23 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById("container");
+    const createBoxButton = document.getElementById("create-box");
+    var up = 3;
+    createBoxButton.style.padding="10px";
+    container.style.padding="10px";
+
+    createBoxButton.addEventListener("click", function () {
+        const box = document.createElement("div");
+        box.classList.add("box");
+        // const textNode = document.createTextNode("Tank ");
+        const anchor = document.createElement("a");
+        anchor.href = "tank2.html"; // Replace with your desired URL
+        anchor.textContent = `Tank ${up}`; // The text inside the anchor tag
+        up++;
+        // Append the anchor tag to the box
+        box.appendChild(anchor);
+
+        // Append the text node to the box
+        // box.appendChild(textNode);
+        container.appendChild(box);
+    });
+});
